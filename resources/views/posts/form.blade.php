@@ -17,7 +17,7 @@
                         @isset($post)
                             @method('put')
                         @endisset
-                
+
                         <div>
                             <x-input-label for="title" value="Title" />
                             <x-text-input id="title" name="title" type="text" class="mt-1 block w-full" :value="$post->title ?? old('title')" required autofocus />
@@ -48,7 +48,7 @@
                             </div>
                             <x-input-error class="mt-2" :messages="$errors->get('featured_image')" />
                         </div>
-                
+
                         <div class="flex items-center gap-4">
                             <x-primary-button>{{ __('Save') }}</x-primary-button>
                         </div>
